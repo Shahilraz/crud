@@ -1,27 +1,14 @@
 import React, { useEffect } from 'react'
-import {getPost} from './api/Postapi'
+import Post from './components/Post'
 
 
 function App() {
-  console.log(getPost())
-  const getPostData=async()=>{
-    const result = await getPost();
-    console.log(res);
-  };
-
-  useEffect(()=>{
-    getPostData();
-  },[]);
-
-
-
-
+  
   return (
     
-    <div>
-    
-      hello react
-    </div>
+    <section className='main-section'>
+      <Post/>
+    </section>
   )
 }
 
